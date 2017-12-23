@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+</head>
+
+<body ng-app="appmodule"
+      ng-controller="userCtrl as vm">
+    <div>
+        <nav class="navbar navbar-default ">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://logcorner.com">LogCorner.com</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ng-if="vm.isLoggedIn()">
+                            <a>Welcome {{ vm.userName }}</a>
+                        </li>
+                        <li ng-if="vm.isLoggedIn()">
+                            <span>
+                                <button type="submit"
+                                        class="btn btn-default"
+                                        ng-click="vm.logout()">
+                                    Log Out
+                                </button>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="jumbotron">
+                    <h1>AngularJS Token Authentication </h1>
+                    <p>
+                        AngularJS Token based Authentication using Asp.net Core Web API and JSON Web Token
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div ng-if="vm.isLoggedIn() == true"
+                     ng-include="'app/product/productListView.html'">
+                </div>
+                <div ng-if="vm.isLoggedIn() == false"
+                     ng-include="'app/user/userLoginView.html'">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/Common/common.services.js"></script>
+    <script src="app/user/userCtrl.js"></script>
+    <script src="app/product/productListCtrl.js"></script>
+    <script src="app/service/loginservice.js"></script>
+    <script src="app/service/productService.js"></script>
+    <script src="app/Model/userProfile.js"></script>
+</body>
+</html>

@@ -3,3 +3,13 @@
 ################################################################################
 
 /Angular2Client/bin
+/Angular2Client/node_modules
+/Angular2Client/obj/Debug
+/AngularJsClient/Bin
+/packages
+/TokenAuthWebApiCore.Server/bin/Debug/netcoreapp1.1
+/TokenAuthWebApiCore.Server/obj
+/TokenAuthWebApiCore.Server.IntegrationTest/bin/Debug/netcoreapp1.1
+/TokenAuthWebApiCore.Server.IntegrationTest/obj
+/TokenAuthWebApiCore.Server.IntegrationTest/bin/Debug/netcoreapp2.0
+/.vs

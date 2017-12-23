@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenAuthWebApiCore.Server", "TokenAuthWebApiCore.Server\TokenAuthWebApiCore.Server.csproj", "{8525F375-152C-48F9-ACCD-35C63BD1F6F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenAuthWebApiCore.Server.IntegrationTest", "TokenAuthWebApiCore.Server.IntegrationTest\TokenAuthWebApiCore.Server.IntegrationTest.csproj", "{01DF07E1-BEC9-4B7E-B1A7-6871AD917294}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AngularJsClient(2)", "AngularJsClient\", "{E9E2C93D-E56E-4250-B150-28765CD9D481}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51610"
+		Debug.AspNetCompiler.PhysicalPath = "AngularJsClient\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51610\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51610"
+		Release.AspNetCompiler.PhysicalPath = "AngularJsClient\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51610\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51610"
+		SlnRelativePath = "AngularJsClient\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular2Client", "Angular2Client\Angular2Client.csproj", "{9EE46C96-EA2C-44F7-A81D-1907104686CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8525F375-152C-48F9-ACCD-35C63BD1F6F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8525F375-152C-48F9-ACCD-35C63BD1F6F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8525F375-152C-48F9-ACCD-35C63BD1F6F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8525F375-152C-48F9-ACCD-35C63BD1F6F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01DF07E1-BEC9-4B7E-B1A7-6871AD917294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01DF07E1-BEC9-4B7E-B1A7-6871AD917294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01DF07E1-BEC9-4B7E-B1A7-6871AD917294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01DF07E1-BEC9-4B7E-B1A7-6871AD917294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9E2C93D-E56E-4250-B150-28765CD9D481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9E2C93D-E56E-4250-B150-28765CD9D481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9E2C93D-E56E-4250-B150-28765CD9D481}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9E2C93D-E56E-4250-B150-28765CD9D481}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{9EE46C96-EA2C-44F7-A81D-1907104686CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EE46C96-EA2C-44F7-A81D-1907104686CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EE46C96-EA2C-44F7-A81D-1907104686CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EE46C96-EA2C-44F7-A81D-1907104686CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE113F5F-39F4-49D4-B7DA-F7E61DAEE52E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,29 @@
+<div class="panel panel-success"
+     ng-controller="ProductListCtrl as vm">
+    <div class="panel-heading"
+         style="font-size:large">
+        Product List : you must be logged in to view this list
+    </div>
+
+    <div class="panel-body">
+        <table class="table">
+
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Name</td>
+                    <td>Price</td>
+                    <td>Description</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="product in vm.products">
+                    <td>{{ product.id}}</td>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.price  }}</td>
+                    <td>{{ product.description }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
