@@ -1,6 +1,5 @@
 ﻿(function () {
     "use strict";
-
     angular
         .module("appmodule")
         .controller("userCtrl",
@@ -15,11 +14,9 @@
         vm.userName = "";
         vm.userEmail = "";
         vm.userPassword = "";
-
         vm.newUserEmail = "";
         vm.newUserPassword = "";
         vm.confirmUserPassword = "";
-
         vm.accessToken = "";
         vm.refreshToken = "";
 
@@ -39,14 +36,12 @@
             };
 
             var registerResult = loginservice.register(userRegistrationInfo);
-
             registerResult.then(function (data) {
                 vm.responseData = "User Registration successful";
                 vm.newUserPassword = "";
                 vm.confirmUserPassword = "";
             }, function (response) {
                 vm.registerErrorData = response.statusText + "\r\n";
-
                 if (response.data) {
                     for (var key in response.data) {
                         vm.registerErrorData += response.data[key] + "\r\n";
@@ -71,7 +66,6 @@
             vm.registerErrorData = '';
             vm.loginErrorData = '';
             var loginResult = loginservice.login(userLogin);
-
             loginResult.then(function (resp) {
                 var result = resp.data.claims.filter(function (o) {
                     return o.type == 'sub';

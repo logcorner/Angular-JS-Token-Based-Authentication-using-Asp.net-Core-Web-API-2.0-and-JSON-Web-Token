@@ -25,7 +25,6 @@ namespace TokenAuthWebApiCore.Server.Controllers
         }
 
         [HttpGet]
-        //[Authorize]
         public IActionResult Get()
         {
             try
